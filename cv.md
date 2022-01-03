@@ -1,20 +1,24 @@
 # Vyacheslav Grabovskiy
 ### Trainee Frontend-Developer
-===
+
 ## Contacts
 + **E-mail:** vyacheslav.grabovskiy@gmail.com
 + **Phone:** 8 800 555 35 35
 + **Telegram:** strad1e
-===
+
+
+
 ## About myself
 
-The computer appeared early, so the future was predetermined. Graduated from the university with a degree in telecommunications, now I work as a network engineer. In my free time I do web development and design. I started learning programming with python, but I realized that the frontend is closer to me, that's why I'm here. 
-===
+
+
+The computer appeared early, so the future was predetermined. Graduated from the university with a degree in telecommunications, now I work as a network engineer. In my free time I do web development and design. I started learning programming with python, but I realized that the frontend is closer to me, that's why I'm here.
+
 ## My Skills
 + **Development:** HTML/CSS, JavaScript, Python, Git
 + **Adminstration:** CCNA, Windows, Linux
 + **Design:** Figma, Photoshop, Illustrator, AfterEffects, Blender
-===
+
 ## Code sample
 ### guessNumber game script
 ```
