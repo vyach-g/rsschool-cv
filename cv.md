@@ -7,6 +7,7 @@
 + **Telegram:** strad1e
 ===
 ## About myself
+
 The computer appeared early, so the future was predetermined. Graduated from the university with a degree in telecommunications, now I work as a network engineer. In my free time I do web development and design. I started learning programming with python, but I realized that the frontend is closer to me, that's why I'm here. 
 ===
 ## My Skills
