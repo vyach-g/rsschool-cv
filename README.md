@@ -1,2 +1,2 @@
 # rsschool-cv
-RS School CV will be here soon
+Repository for my RS School CV
