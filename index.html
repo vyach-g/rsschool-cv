@@ -1,13 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Vyacheslav CV</title>
 </head>
+
 <body>
-    <h1>HTML/CSS CV will be here soon</h1>
+    <div class="container">
+        <div class="bg-container">
+            <div class="line"> </div>
+            <div class="line"> </div>
+            <div class="line"> </div>
+
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo"><a href="/"><b>vyach.</b></a></div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skillang">Skills & Languages</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#study">Study</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <div class="container main-container">
+            <section class="main">
+                <div class="social-main">
+                    <ul class="contacts-list">
+                        <li><a href="https://github.com/vyach-g">GitHub</a></li>
+                        <li><a href="https://t.me/strad1e">Telegram</a></li>
+                        <li><a href="mailto:vyacheslav.grabovskiy@gmail.com">E-mail</a></li>
+                        <li><a href="tel:88005553535">Phone</a></li>
+                    </ul>
+                </div>
+                <div class="info-main">
+                    <h1>Frontend Developer & <br> UX/UI Designer</h1>
+                    <h2>Grabovskiy Vyacheslav</h2>
+                </div>
+
+            </section>
+
+            <section class="about" id="about">
+                <div class="photo">
+                    <div class="photo-frame"><img src="/img/photo.png" width="300" alt="my photo"></div>
+                </div>
+                <div class="about-text">
+                    <div class="heading skill-heading">
+                        <h2>About Myself</h2>
+                    </div>
+                    <p>The computer in my life appeared early, so the future was predetermined.
+                        Graduated from the university with a degree in telecommunications, now I work as a network
+                        engineer.
+                        In my free time I do web development and design.
+                        I started learning programming with python, but I realized that the frontend is closer to me,
+                        that’s why I’m here.<br><br><br><br><br></p>
+                </div>
+
+
+            </section>
+
+            <section class="skillang" id="skillang">
+                <div class="heading skill-heading">
+                    <h2>My skills & knowledge of languages</h2>
+                </div>
+                <div class="skill-item skill">
+                    <h3>My skills</h3>
+                    <ul>
+                        <li><b>Development:</b> HTML/CSS, JavaScript, Python, Git</li>
+                        <li><b>Adminstration:</b> CCNA, Windows, Linux</li>
+                        <li><b>Design:</b> Figma, Photoshop, Illustrator, AfterEffects, Blender</li>
+                    </ul>
+                </div>
+
+                <div class="skill-item language">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li><b>Russian:</b> Native</li>
+                        <li><b>English:</b> B1</li>
+                        <li><b>Kazakh:</b> A2</li>
+                        <li><b>German:</b> A2</li>
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <section class="code" id="code">
+                <div class="heading code-heading">
+                    <h2>My code example</h2>
+                    <div>Script of the simple binary search game guessNumber</div>
+                </div>
+                <div class="example">
+                    <code>
+                        var randomNumber <br>
+                        var guessNumber <br>
+                        var value <br><br>
+                        
+                        newRandom = function() {<br>
+                            &nbsp;&nbsp;; randomNumber = Math.floor(Math.random()*100)<br>
+                            &nbsp;&nbsp; console.log(randomNumber)<br>
+                        }<br><br>
+                        
+                        document.querySelector("#inp").addEventListener("keyup", event => {<br>
+                            &nbsp;&nbsp; if(event.key !== "Enter") return;<br>
+                            &nbsp;&nbsp; document.querySelector("#butt").click();<br>
+                            &nbsp;&nbsp; event.preventDefault();<br>
+                        });<br><br>
+                        
+                        attempt = function() {<br>
+                            &nbsp;&nbsp; value = document.getElementById('inp').value;<br>
+                            &nbsp;&nbsp; if (value==randomNumber) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; document.getElementById('res').innerHTML="<b>Вы угадали!</b><br>Загадано новое число";<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; newRandom();<br>
+                            } <br>
+                            &nbsp;&nbsp; else if (value &lt; 0) document.getElementById('res').innerHTML="Только положительные <br> числа";<br>
+                            &nbsp;&nbsp; else if (value-randomNumber>0 && value-randomNumber &lt; 10) document.getElementById('res').innerHTML="Загаданное число <br> немного меньше";<br>
+                            &nbsp;&nbsp; else if (value-randomNumber>=10 && value-randomNumber &lt; 100) document.getElementById('res').innerHTML="Загаданное число <br> много меньше";<br>
+                            &nbsp;&nbsp; else if (randomNumber-value>0 && randomNumber-value &lt; 10) document.getElementById('res').innerHTML="Загаданное число <br> немного больше";<br>
+                            &nbsp;&nbsp; else if (randomNumber-value>=10 && randomNumber-value &lt; 100) document.getElementById('res').innerHTML="Загаданное число <br> много больше";<br>
+                            &nbsp;&nbsp; else document.getElementById('res').innerHTML="Вводите числа";<br>
+                        };<br><br>
+                        
+                        newRandom()
+                    </code>
+                </div>
+            </section>
+
+
+            <section class="experience" id="experience">
+                <div class="heading exp-heading">
+                    <h2>Work experience</h2>
+                </div>
+                <div class="exp-rec">
+                    <div class="exp-item exp-date">04.2020 — now</div>
+                    <div class="exp-item exp-place">JSC KT</div>
+                    <div class="exp-item exp-details"><b>Network Engineer</b><br>Network administration, server and
+                        network equipment configuration and maintaince</div>
+                </div>
+                <div class="exp-rec">
+                    <div class="exp-item exp-date">02.2019 — now</div>
+                    <div class="exp-item exp-place">WIZOUD Digital-Studio</div>
+                    <div class="exp-item exp-details"><b>Project manager</b><br>Project management, design, team
+                        collaboration</div>
+                </div>
+            </section>
+
+            <section class="study" id="study">
+                <div class="heading exp-heading">
+                    <h2>Study</h2>
+                </div>
+                <div class="exp-rec">
+                    <div class="exp-item exp-date">12.2021 — now</div>
+                    <div class="exp-item exp-place">RSSchool</div>
+                    <div class="exp-item exp-details"><b>JavaScript/Front-end Developer</b></div>
+                </div>
+                <div class="exp-rec">
+                    <div class="exp-item exp-date">06.2021 — 08.2021</div>
+                    <div class="exp-item exp-place">Coursera</div>
+                    <div class="exp-item exp-details"><b>HTML/CSS/JS Basics Online-Courses</b></div>
+                </div>
+                <div class="exp-rec">
+                    <div class="exp-item exp-date">10.2020 — 12.2021</div>
+                    <div class="exp-item exp-place">Stepik</div>
+                    <div class="exp-item exp-details"><b>Python Development Online-Courses</b></div>
+                </div>
+                <div class="exp-rec">
+                    <div class="exp-item exp-date">09.2016 — 06.2020</div>
+                    <div class="exp-item exp-place">NKZU</div>
+                    <div class="exp-item exp-details"><b>Radio Engineering, Electronics and Telecommunications</b></div>
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-item rs-logo">
+                <div class="heading exp-heading">
+                    <h2>Student of</h2>
+                </div>
+                <div class="rs-logo">
+                    <a href="https://rs.school/js/"><img src="img/rs-school.svg" alt="RSSchool Logo" width=200
+                            style="background-color: rgb(255, 255, 255)"></a>
+                </div>
+            </div>
+            <div class="footer-item social">
+                <div class="heading exp-heading">
+                    <h2>Contacts</h2>
+                </div>
+                <ul class="contacts-list" id="contacts">
+                    <li><a href="https://github.com/vyach-g"><b>GitHub</b></a></li>
+                    <li><a href="https://t.me/strad1e"><b>Telegram</b></a></li>
+                    <li><a href="mailto:vyacheslav.grabovskiy@gmail.com"><b>E-mail</b></a></li>
+                    <li><a href="tel:88005553535"><b>Phone</b></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item made">
+                <div class="heading exp-heading">
+                    <h2>Made in<br><span class="year">2022</span><br>with love ❤️</h2>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 </body>
+
 </html>
