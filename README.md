@@ -1,2 +1,2 @@
 # rsschool-cv
-RS School CV
+RS School CV will be here soon
