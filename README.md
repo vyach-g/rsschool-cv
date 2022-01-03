@@ -1,2 +1,2 @@
 # rsschool-cv
-Repository for my RS School CV
+https://vyach-g.github.io/rsschool-cv/
